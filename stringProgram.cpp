@@ -4,15 +4,16 @@
 #include <string>
 using namespace std;
 
+// Give a string question, get a string response
 string qString(string query) {
   string response;
   cout << query << endl;
   cin >> response;
-  return response;
 }
-
+// Give a string question, get an int response
 int qInt(string query) { return stoi(qString(query)); }
 
+// Give a string question, get a bool response
 bool qBool(string query) {
   string res = qString(query);
   char firstLetter = tolower(res[0]);
