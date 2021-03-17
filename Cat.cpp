@@ -1,1 +1,7 @@
-class Cat {}
+class Cat {
+ private:
+  bool y;
+
+ public:
+  int x;
+};
